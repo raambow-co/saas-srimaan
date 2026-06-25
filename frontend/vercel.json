@@ -1,11 +1,11 @@
 {
   "cleanUrls": true,
-  "routes": [
-    { "handle": "filesystem" },
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!assets/|favicon.svg|icons.svg|manifest.json|sw.js).*)",
+      "destination": "/index.html"
     }
   ]
 }
+
 
