@@ -1,6 +1,7 @@
 import bcryptjs from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { User, Agent, AuditLog } from '../models/dbClient.js';
+import { getDbMode } from '../config/db.js';
 
 const generateToken = (id, role) => {
   return jwt.sign(
@@ -18,14 +19,26 @@ export const login = async (req, res) => {
   }
 
   try {
-    // 1. Try to find Admin first
-    let user = await User.findOne({ username });
+    // 1. Try to find Admin first (case-insensitive)
+    let user = null;
+    if (getDbMode()) {
+      const admins = await User.find();
+      user = admins.find(u => u.username.toLowerCase() === username.toLowerCase()) || null;
+    } else {
+      user = await User.findOne({ username: { $regex: new RegExp(`^${username}$`, 'i') } });
+    }
+    
     let isAgent = false;
     let dbUser = user;
 
     if (!user) {
-      // 2. Try to find Agent
-      user = await Agent.findOne({ username });
+      // 2. Try to find Agent (case-insensitive)
+      if (getDbMode()) {
+        const agents = await Agent.find();
+        user = agents.find(a => a.username.toLowerCase() === username.toLowerCase()) || null;
+      } else {
+        user = await Agent.findOne({ username: { $regex: new RegExp(`^${username}$`, 'i') } });
+      }
       isAgent = true;
       dbUser = user;
     }

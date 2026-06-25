@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Sun, Moon, Lock, User, AlertCircle, Loader } from 'lucide-react';
+import { Sun, Moon, Lock, User, AlertCircle, Loader, Eye, EyeOff } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext.jsx';
 import { useTheme } from '../../context/ThemeContext.jsx';
 
@@ -11,6 +11,7 @@ const Login = () => {
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -119,14 +120,22 @@ const Login = () => {
                 <Lock className="h-5 w-5" />
               </span>
               <input
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-2xl border border-slate-200 dark:border-deepBlue-800 bg-white/50 dark:bg-deepBlue-950/40 py-3 pl-11 pr-4 text-sm text-slate-800 dark:text-slate-100 placeholder-slate-400 outline-none focus:border-solarOrange focus:ring-2 focus:ring-solarOrange/10 transition-all dark:focus:border-solarOrange"
+                className="w-full rounded-2xl border border-slate-200 dark:border-deepBlue-800 bg-white/50 dark:bg-deepBlue-950/40 py-3 pl-11 pr-12 text-sm text-slate-800 dark:text-slate-100 placeholder-slate-400 outline-none focus:border-solarOrange focus:ring-2 focus:ring-solarOrange/10 transition-all dark:focus:border-solarOrange"
                 placeholder="Enter your password"
                 id="login_password_input"
                 required
               />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute inset-y-0 right-0 flex items-center pr-4 text-slate-400 dark:text-slate-500 hover:text-solarOrange dark:hover:text-solarOrange transition-colors"
+                tabIndex="-1"
+              >
+                {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
+              </button>
             </div>
           </div>
 
