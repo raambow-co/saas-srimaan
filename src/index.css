@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased transition-colors duration-300;
+  }
+  
+  body.dark {
+    @apply bg-deepBlue-950 text-slate-100;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-deepBlue-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-deepBlue-700 rounded-full hover:bg-slate-400 dark:hover:bg-deepBlue-600;
+}
+
+/* Premium Visual Utility Classes */
+.glass-panel {
+  @apply bg-white/80 dark:bg-deepBlue-900/80 backdrop-blur-md border border-slate-200/50 dark:border-deepBlue-800/40 shadow-xl shadow-slate-100/30 dark:shadow-black/20;
+}
+
+.glass-panel-hover {
+  @apply hover:-translate-y-1 hover:shadow-2xl hover:border-solarOrange/30 dark:hover:border-solarOrange/30 transition-all duration-300;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 140, 0, 0.08) 0%, transparent 60%);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-solarOrange to-orange-500 dark:from-solarOrange dark:to-amber-400;
+}
+
+/* PWA Splash Install Banner style */
+.pwa-banner {
+  @apply fixed bottom-4 right-4 z-50 p-4 rounded-2xl shadow-2xl glass-panel animate-slide-up border-l-4 border-l-solarOrange;
+}
+
+/* Switch styling */
+.switch-toggle {
+  @apply relative inline-flex h-6 w-11 items-center rounded-full transition-colors outline-none focus:ring-2 focus:ring-solarOrange/30;
+}

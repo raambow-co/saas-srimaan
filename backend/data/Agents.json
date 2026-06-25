@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "agent_seed_1",
+    "agentId": "AGT001",
+    "fullName": "Ravi Kumar",
+    "mobileNumber": "9876543201",
+    "email": "ravi_kumar@srimaansolar.com",
+    "address": "Kumar, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "ravi_kumar",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_2",
+    "agentId": "AGT002",
+    "fullName": "Suresh Reddy",
+    "mobileNumber": "9876543202",
+    "email": "suresh_reddy@srimaansolar.com",
+    "address": "Reddy, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "suresh_reddy",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_3",
+    "agentId": "AGT003",
+    "fullName": "Mahesh Babu",
+    "mobileNumber": "9876543203",
+    "email": "mahesh_babu@srimaansolar.com",
+    "address": "Babu, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "mahesh_babu",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_4",
+    "agentId": "AGT004",
+    "fullName": "Praveen Kumar",
+    "mobileNumber": "9876543204",
+    "email": "praveen_kumar@srimaansolar.com",
+    "address": "Kumar, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "praveen_kumar",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_5",
+    "agentId": "AGT005",
+    "fullName": "Kiran Kumar",
+    "mobileNumber": "9876543205",
+    "email": "kiran_kumar@srimaansolar.com",
+    "address": "Kumar, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "kiran_kumar",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_6",
+    "agentId": "AGT006",
+    "fullName": "Srinivas Rao",
+    "mobileNumber": "9876543206",
+    "email": "srinivas_rao@srimaansolar.com",
+    "address": "Rao, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "srinivas_rao",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_7",
+    "agentId": "AGT007",
+    "fullName": " राजेश Naidu",
+    "mobileNumber": "9876543207",
+    "email": "_______naidu@srimaansolar.com",
+    "address": "राजेश, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "_______naidu",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_8",
+    "agentId": "AGT008",
+    "fullName": "Ganesh Kumar",
+    "mobileNumber": "9876543208",
+    "email": "ganesh_kumar@srimaansolar.com",
+    "address": "Kumar, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "ganesh_kumar",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_9",
+    "agentId": "AGT009",
+    "fullName": "Venkatesh Reddy",
+    "mobileNumber": "9876543209",
+    "email": "venkatesh_reddy@srimaansolar.com",
+    "address": "Reddy, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "venkatesh_reddy",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  },
+  {
+    "_id": "agent_seed_10",
+    "agentId": "AGT010",
+    "fullName": "Harish Kumar",
+    "mobileNumber": "9876543210",
+    "email": "harish_kumar@srimaansolar.com",
+    "address": "Kumar, Andhra Pradesh",
+    "status": "Active",
+    "joiningDate": "2026-06-01",
+    "username": "harish_kumar",
+    "password": "$2a$10$1MiowvZ608AjVx49IwmgB.lwOs10l.FwfyEbR8OiaMC7gB8z1t6om"
+  }
+]

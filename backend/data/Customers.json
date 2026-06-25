@@ -1,0 +1,334 @@
+[
+  {
+    "_id": "cust_seed_1",
+    "customerId": "CUST0001",
+    "customerName": "Aditya Naidu",
+    "aadhaarNumber": "908765432101",
+    "mobileNumber": "9988776655",
+    "houseNumber": "4-89/A",
+    "fullAddress": "Temple Street, Gopalapuram, Krishna Dist, AP",
+    "village": "Gopalapuram",
+    "mandal": "Pamarru",
+    "district": "Krishna",
+    "state": "Andhra Pradesh",
+    "pincode": "521157",
+    "solarCapacityRequired": 5,
+    "electricityBillAmount": 3500,
+    "assignedAgent": "AGT001",
+    "status": "Installed",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "ravi_kumar",
+        "timestamp": "2026-06-01T10:00:00.000Z",
+        "notes": "Lead registered by agent."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "ravi_kumar",
+        "timestamp": "2026-06-03T11:30:00.000Z",
+        "notes": "Updated status: In Progress."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "ravi_kumar",
+        "timestamp": "2026-06-05T14:00:00.000Z",
+        "notes": "Site Inspection scheduled."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "ravi_kumar",
+        "timestamp": "2026-06-07T09:15:00.000Z",
+        "notes": "Document Verification."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "Srimaan_solar",
+        "timestamp": "2026-06-08T16:45:00.000Z",
+        "notes": "Approved by admin."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "ravi_kumar",
+        "timestamp": "2026-06-12T10:30:00.000Z",
+        "notes": "Installation Completed."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_2",
+    "customerId": "CUST0002",
+    "customerName": "Venkata Satish",
+    "aadhaarNumber": "876543210987",
+    "mobileNumber": "9848022338",
+    "houseNumber": "10-23-1",
+    "fullAddress": "Ganga Street, Vuyyuru, Krishna, AP",
+    "village": "Vuyyuru",
+    "mandal": "Vuyyuru",
+    "district": "Krishna",
+    "state": "Andhra Pradesh",
+    "pincode": "521165",
+    "solarCapacityRequired": 3,
+    "electricityBillAmount": 2200,
+    "assignedAgent": "AGT002",
+    "status": "Installation Pending",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "suresh_reddy",
+        "timestamp": "2026-06-05T10:00:00.000Z",
+        "notes": "Lead registered."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "Srimaan_solar",
+        "timestamp": "2026-06-12T11:00:00.000Z",
+        "notes": "Documents verified and approved."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_3",
+    "customerId": "CUST0003",
+    "customerName": "Kiran Reddy",
+    "aadhaarNumber": "765432109876",
+    "mobileNumber": "8123456789",
+    "houseNumber": "1-45",
+    "fullAddress": "Guntur Rural, Guntur, AP",
+    "village": "Guntur Rural",
+    "mandal": "Guntur",
+    "district": "Guntur",
+    "state": "Andhra Pradesh",
+    "pincode": "522001",
+    "solarCapacityRequired": 10,
+    "electricityBillAmount": 8500,
+    "assignedAgent": "AGT003",
+    "status": "Approved",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "mahesh_babu",
+        "timestamp": "2026-06-08T10:00:00.000Z",
+        "notes": "Lead registered."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "Srimaan_solar",
+        "timestamp": "2026-06-15T15:00:00.000Z",
+        "notes": "Lead approved by Admin."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_4",
+    "customerId": "CUST0004",
+    "customerName": "Sunita Sharma",
+    "aadhaarNumber": "654321098765",
+    "mobileNumber": "9112233445",
+    "houseNumber": "Plot 402",
+    "fullAddress": "Madhapur, Hyderabad, TS",
+    "village": "Madhapur",
+    "mandal": "Serilingampally",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500081",
+    "solarCapacityRequired": 8,
+    "electricityBillAmount": 6200,
+    "assignedAgent": "AGT004",
+    "status": "Document Verification",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "praveen_kumar",
+        "timestamp": "2026-06-10T12:00:00.000Z",
+        "notes": "Lead added."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "praveen_kumar",
+        "timestamp": "2026-06-14T09:30:00.000Z",
+        "notes": "Uploaded Aadhaar front and back for verification."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_5",
+    "customerId": "CUST0005",
+    "customerName": "Srinivas Rao",
+    "aadhaarNumber": "543210987654",
+    "mobileNumber": "9000111222",
+    "houseNumber": "2-12",
+    "fullAddress": "Benz Circle, Vijayawada, Krishna, AP",
+    "village": "Benz Circle",
+    "mandal": "Vijayawada Urban",
+    "district": "Krishna",
+    "state": "Andhra Pradesh",
+    "pincode": "520010",
+    "solarCapacityRequired": 4,
+    "electricityBillAmount": 2800,
+    "assignedAgent": "AGT005",
+    "status": "Site Inspection",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "kiran_kumar",
+        "timestamp": "2026-06-12T10:00:00.000Z",
+        "notes": "Lead registered."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "kiran_kumar",
+        "timestamp": "2026-06-18T14:30:00.000Z",
+        "notes": "Site Inspection conducted by engineer."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_6",
+    "customerId": "CUST0006",
+    "customerName": "Anil Kumar",
+    "aadhaarNumber": "432109876543",
+    "mobileNumber": "8008123456",
+    "houseNumber": "5-67",
+    "fullAddress": "Visakhapatnam Beach Road, Vizag, AP",
+    "village": "Beach Road",
+    "mandal": "Visakhapatnam Urban",
+    "district": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "pincode": "530002",
+    "solarCapacityRequired": 6,
+    "electricityBillAmount": 4900,
+    "assignedAgent": "AGT006",
+    "status": "In Progress",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "srinivas_rao",
+        "timestamp": "2026-06-15T09:00:00.000Z",
+        "notes": "Contact initiated and details logged."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_7",
+    "customerId": "CUST0007",
+    "customerName": "Rajesh Naidu",
+    "aadhaarNumber": "321098765432",
+    "mobileNumber": "9550123456",
+    "houseNumber": "12-4B",
+    "fullAddress": "Tirupati, Chittoor, AP",
+    "village": "Tirupati",
+    "mandal": "Tirupati",
+    "district": "Chittoor",
+    "state": "Andhra Pradesh",
+    "pincode": "517501",
+    "solarCapacityRequired": 5,
+    "electricityBillAmount": 3800,
+    "assignedAgent": "AGT007",
+    "status": "New Lead",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "rajesh_naidu",
+        "timestamp": "2026-06-18T11:00:00.000Z",
+        "notes": "Lead added from marketing campaign."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_8",
+    "customerId": "CUST0008",
+    "customerName": "Ganesh Kumar",
+    "aadhaarNumber": "210987654321",
+    "mobileNumber": "7013456789",
+    "houseNumber": "3-40",
+    "fullAddress": "Nellore Town, Nellore, AP",
+    "village": "Nellore",
+    "mandal": "Nellore",
+    "district": "Nellore",
+    "state": "Andhra Pradesh",
+    "pincode": "524001",
+    "solarCapacityRequired": 4,
+    "electricityBillAmount": 3200,
+    "assignedAgent": "AGT008",
+    "status": "Rejected",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "ganesh_kumar",
+        "timestamp": "2026-06-20T10:00:00.000Z",
+        "notes": "Lead added."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "Srimaan_solar",
+        "timestamp": "2026-06-22T16:00:00.000Z",
+        "notes": "Rejected: Inadequate structural support for solar panels on roof."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_9",
+    "customerId": "CUST0009",
+    "customerName": "Venkatesh Reddy",
+    "aadhaarNumber": "109876543210",
+    "mobileNumber": "9490123456",
+    "houseNumber": "7-123",
+    "fullAddress": "Kurnool, AP",
+    "village": "Kurnool",
+    "mandal": "Kurnool",
+    "district": "Kurnool",
+    "state": "Andhra Pradesh",
+    "pincode": "518001",
+    "solarCapacityRequired": 12,
+    "electricityBillAmount": 11000,
+    "assignedAgent": "AGT009",
+    "status": "Installed",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "venkatesh_reddy",
+        "timestamp": "2026-06-02T10:00:00.000Z",
+        "notes": "Lead added."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "Srimaan_solar",
+        "timestamp": "2026-06-08T11:00:00.000Z",
+        "notes": "Lead Approved."
+      },
+      {
+        "action": "STATUS_CHANGE",
+        "performedBy": "venkatesh_reddy",
+        "timestamp": "2026-06-15T15:00:00.000Z",
+        "notes": "Installation completed successfully."
+      }
+    ]
+  },
+  {
+    "_id": "cust_seed_10",
+    "customerId": "CUST0010",
+    "customerName": "Harish Kumar",
+    "aadhaarNumber": "098765432109",
+    "mobileNumber": "8885566778",
+    "houseNumber": "1-8",
+    "fullAddress": "Secunderabad, Hyderabad, TS",
+    "village": "Secunderabad",
+    "mandal": "Secunderabad",
+    "district": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500003",
+    "solarCapacityRequired": 6,
+    "electricityBillAmount": 4205,
+    "assignedAgent": "AGT010",
+    "status": "New Lead",
+    "activityHistory": [
+      {
+        "action": "LEAD_CREATED",
+        "performedBy": "harish_kumar",
+        "timestamp": "2026-06-24T14:00:00.000Z",
+        "notes": "Lead generated."
+      }
+    ]
+  }
+]

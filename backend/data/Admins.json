@@ -1,0 +1,9 @@
+[
+  {
+    "_id": "admin_seed_1",
+    "username": "Srimaan_solar",
+    "password": "$2a$10$od0Wad2X00gFGB8soC/lwOZ5h6Rb45tdbPlNtQp8bI7AGYDRkcsZ2",
+    "role": "ADMIN",
+    "email": "admin@srimaansolar.com"
+  }
+]
