@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import API, { BACKEND_URL } from '../utils/api.js';
+import logoAsset from '../assets/logo.png';
 
 const AuthContext = createContext();
 
@@ -128,7 +129,7 @@ export const AuthProvider = ({ children }) => {
     if (companySettings.logoUrl) {
       return `${BACKEND_URL}/${companySettings.logoUrl.replace(/^\.\//, '')}`;
     }
-    return null;
+    return logoAsset;
   };
 
   return (

@@ -21,15 +21,16 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Initialize DB Connection
-await connectDB();
-
-// If we connected to MongoDB, seed it
-if (!getDbMode()) {
-  await seedMongooseDB();
-} else {
-  console.log('Using Local File Mock Database. Seeding is managed automatically.');
-}
+// Initialize DB Connection asynchronously (non-blocking for serverless cold start)
+connectDB().then(() => {
+  if (!getDbMode()) {
+    return seedMongooseDB();
+  } else {
+    console.log('Using Local File Mock Database. Seeding is managed automatically.');
+  }
+}).catch(err => {
+  console.error('DB Connection/Seeding Error:', err);
+});
 
 const app = express();
 

@@ -6,5 +6,61 @@
     "actor": "Srimaan_solar",
     "action": "LOGIN",
     "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_qn59niylj",
+    "createdAt": "2026-06-25T08:52:45.093Z",
+    "updatedAt": "2026-06-25T08:52:45.093Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_3k5qhewxb",
+    "createdAt": "2026-06-25T10:13:29.727Z",
+    "updatedAt": "2026-06-25T10:13:29.727Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_9fuec9jpk",
+    "createdAt": "2026-06-25T10:48:56.035Z",
+    "updatedAt": "2026-06-25T10:48:56.035Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_m7dl88em5",
+    "createdAt": "2026-06-25T11:04:50.172Z",
+    "updatedAt": "2026-06-25T11:04:50.172Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_zei4lumji",
+    "createdAt": "2026-06-26T04:18:40.786Z",
+    "updatedAt": "2026-06-26T04:18:40.786Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_4nalsm5c9",
+    "createdAt": "2026-06-26T04:19:47.928Z",
+    "updatedAt": "2026-06-26T04:19:47.928Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_dslbtsq7a",
+    "createdAt": "2026-06-26T04:35:44.463Z",
+    "updatedAt": "2026-06-26T04:35:44.463Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
   }
 ]

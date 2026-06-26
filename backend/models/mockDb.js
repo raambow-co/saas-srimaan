@@ -13,22 +13,27 @@ if (!fs.existsSync(DATA_DIR)) {
 export class MockModel {
   constructor(collectionName, defaultData = []) {
     this.collectionName = collectionName;
+    this.defaultData = defaultData;
     this.filePath = path.join(DATA_DIR, `${collectionName}.json`);
     if (!fs.existsSync(this.filePath)) {
-      fs.writeFileSync(this.filePath, JSON.stringify(defaultData, null, 2));
+      try {
+        fs.writeFileSync(this.filePath, JSON.stringify(defaultData, null, 2));
+      } catch (e) {
+        console.warn(`Warning: Could not write default data for ${collectionName} to filesystem:`, e.message);
+      }
     }
   }
 
   read() {
     try {
       if (!fs.existsSync(this.filePath)) {
-        return [];
+        return this.defaultData || [];
       }
       const data = fs.readFileSync(this.filePath, 'utf8');
       return JSON.parse(data || '[]');
     } catch (e) {
       console.error(`Error reading mock db file ${this.collectionName}:`, e);
-      return [];
+      return this.defaultData || [];
     }
   }
 
