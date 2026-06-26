@@ -4,9 +4,13 @@ import fs from 'fs';
 
 const UPLOAD_DIR = './uploads';
 
-// Ensure directory exists
+// Ensure directory exists (wrapped in try-catch for read-only environments like Vercel)
 if (!fs.existsSync(UPLOAD_DIR)) {
-  fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+  try {
+    fs.mkdirSync(UPLOAD_DIR, { recursive: true });
+  } catch (e) {
+    console.warn(`Warning: Could not create uploads directory in middleware: ${e.message}`);
+  }
 }
 
 const storage = multer.diskStorage({

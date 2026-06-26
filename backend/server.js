@@ -38,10 +38,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Ensure uploads folder exists
+// Ensure uploads folder exists (wrapped in try-catch for read-only environments like Vercel)
 const uploadsDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+  try {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  } catch (e) {
+    console.warn(`Warning: Could not create uploads directory: ${e.message}`);
+  }
 }
 
 // Serve uploaded documents statically

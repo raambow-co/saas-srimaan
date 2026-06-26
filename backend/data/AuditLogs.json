@@ -62,5 +62,13 @@
     "actor": "Srimaan_solar",
     "action": "LOGIN",
     "details": "ADMIN logged in successfully."
+  },
+  {
+    "_id": "mock_6vukz93av",
+    "createdAt": "2026-06-26T04:40:39.725Z",
+    "updatedAt": "2026-06-26T04:40:39.725Z",
+    "actor": "Srimaan_solar",
+    "action": "LOGIN",
+    "details": "ADMIN logged in successfully."
   }
 ]
