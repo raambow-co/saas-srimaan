@@ -49,15 +49,15 @@ if (!fs.existsSync(uploadsDir)) {
 }
 
 // Serve uploaded documents statically
-app.use('/uploads', express.static(uploadsDir));
+app.use(['/api/uploads', '/uploads'], express.static(uploadsDir));
 
 // API Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/agents', agentRoutes);
-app.use('/api/customers', customerRoutes);
-app.use('/api/reports', reportRoutes);
-app.use('/api/notifications', notificationRoutes);
-app.use('/api/settings', settingsRoutes);
+app.use(['/api/auth', '/auth'], authRoutes);
+app.use(['/api/agents', '/agents'], agentRoutes);
+app.use(['/api/customers', '/customers'], customerRoutes);
+app.use(['/api/reports', '/reports'], reportRoutes);
+app.use(['/api/notifications', '/notifications'], notificationRoutes);
+app.use(['/api/settings', '/settings'], settingsRoutes);
 
 // Base route for API check
 app.get('/', (req, res) => {
